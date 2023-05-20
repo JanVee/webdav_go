@@ -60,8 +60,8 @@ func (n *NoAuth) Authorize(req *http.Request, method string, path string) {
 }
 
 // NewClient creates a new instance of client
-func NewClient(uri, user, pw string) *Client {
-	return &Client{FixSlash(uri), make(http.Header), nil, &http.Client{}, sync.Mutex{}, &NoAuth{user, pw}}
+func NewClient(uri, uri2, user, pw string) *Client {
+	return &Client{FixSlash(uri), FixSlash(uri2), make(http.Header), nil, &http.Client{}, sync.Mutex{}, &NoAuth{user, pw}}
 }
 
 // SetHeader lets us set arbitrary headers for a given client
