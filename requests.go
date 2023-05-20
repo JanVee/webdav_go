@@ -148,7 +148,7 @@ func (c *Client) doCopyMove(
 	err error,
 ) {
 	rs, err := c.req(method, oldpath, nil, func(rq *http.Request) {
-		rq.Header.Add("Destination", PathEscape(Join(c.root, newpath)))
+		rq.Header.Add("Destination", PathEscape(Join(c.root2, newpath)))
 		if overwrite {
 			rq.Header.Add("Overwrite", "T")
 		} else {

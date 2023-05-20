@@ -17,6 +17,7 @@ import (
 // Client defines our structure
 type Client struct {
 	root        string
+	root2       string
 	headers     http.Header
 	interceptor func(method string, rq *http.Request)
 	c           *http.Client
