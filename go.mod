@@ -1,4 +1,4 @@
-module github.com/JanVee/webdav_go
+module github.com/JanVee/webdavgo
 
 go 1.17
 
