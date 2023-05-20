@@ -1,4 +1,4 @@
-module github.com/studio-b12/gowebdav
+module github.com/JanVee/webdav_go
 
 go 1.17
 
